@@ -15,6 +15,16 @@
 		1501C2071E588B550013EA25 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1501C2061E588B550013EA25 /* Assets.xcassets */; };
 		1501C20A1E588B550013EA25 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1501C2081E588B550013EA25 /* LaunchScreen.storyboard */; };
 		1501C2121E588EE20013EA25 /* CoreDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1501C2111E588EE20013EA25 /* CoreDataStore.swift */; };
+		1501C2541E58A0FC0013EA25 /* PersistenceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1501C2421E58A0FC0013EA25 /* PersistenceError.swift */; };
+		1501C2551E58A0FC0013EA25 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1501C2441E58A0FC0013EA25 /* Post.swift */; };
+		1501C2561E58A0FC0013EA25 /* PostListProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1501C2511E58A0FC0013EA25 /* PostListProtocols.swift */; };
+		1501C2581E58A26F0013EA25 /* PostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1501C2571E58A26F0013EA25 /* PostModel.swift */; };
+		1501C25C1E58A8EB0013EA25 /* PostListLocalDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1501C25B1E58A8EB0013EA25 /* PostListLocalDataManager.swift */; };
+		1501C25E1E58A9090013EA25 /* PostListRemoteDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1501C25D1E58A9090013EA25 /* PostListRemoteDataManager.swift */; };
+		1501C2601E58AA6D0013EA25 /* PostListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1501C25F1E58AA6D0013EA25 /* PostListInteractor.swift */; };
+		1501C2621E58ABBA0013EA25 /* PostListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1501C2611E58ABBA0013EA25 /* PostListPresenter.swift */; };
+		1501C2641E58AE1B0013EA25 /* PostListWireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1501C2631E58AE1B0013EA25 /* PostListWireFrame.swift */; };
+		1501C2661E58AF200013EA25 /* PostListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1501C2651E58AF200013EA25 /* PostListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +38,16 @@
 		1501C2091E588B550013EA25 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1501C20B1E588B550013EA25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1501C2111E588EE20013EA25 /* CoreDataStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataStore.swift; sourceTree = "<group>"; };
+		1501C2421E58A0FC0013EA25 /* PersistenceError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersistenceError.swift; sourceTree = "<group>"; };
+		1501C2441E58A0FC0013EA25 /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		1501C2511E58A0FC0013EA25 /* PostListProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostListProtocols.swift; sourceTree = "<group>"; };
+		1501C2571E58A26F0013EA25 /* PostModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostModel.swift; sourceTree = "<group>"; };
+		1501C25B1E58A8EB0013EA25 /* PostListLocalDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostListLocalDataManager.swift; sourceTree = "<group>"; };
+		1501C25D1E58A9090013EA25 /* PostListRemoteDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostListRemoteDataManager.swift; sourceTree = "<group>"; };
+		1501C25F1E58AA6D0013EA25 /* PostListInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostListInteractor.swift; sourceTree = "<group>"; };
+		1501C2611E58ABBA0013EA25 /* PostListPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostListPresenter.swift; sourceTree = "<group>"; };
+		1501C2631E58AE1B0013EA25 /* PostListWireFrame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostListWireFrame.swift; sourceTree = "<group>"; };
+		1501C2651E58AF200013EA25 /* PostListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostListView.swift; sourceTree = "<group>"; };
 		603469DB5210F5C501F8FDB5 /* Pods-iOS-Viper-Architecture.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS-Viper-Architecture.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOS-Viper-Architecture/Pods-iOS-Viper-Architecture.debug.xcconfig"; sourceTree = "<group>"; };
 		C0BC9D39498F514FA6DCC853 /* Pods-iOS-Viper-Architecture.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS-Viper-Architecture.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOS-Viper-Architecture/Pods-iOS-Viper-Architecture.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -65,6 +85,10 @@
 		1501C1FB1E588B550013EA25 /* iOS-Viper-Architecture */ = {
 			isa = PBXGroup;
 			children = (
+				1501C2411E58A0FC0013EA25 /* Common */,
+				1501C2431E58A0FC0013EA25 /* Entities */,
+				1501C2451E58A0FC0013EA25 /* PostDetail */,
+				1501C24C1E58A0FC0013EA25 /* PostList */,
 				1501C1FC1E588B550013EA25 /* AppDelegate.swift */,
 				1501C1FE1E588B550013EA25 /* ViewController.swift */,
 				1501C2001E588B550013EA25 /* Main.storyboard */,
@@ -75,6 +99,156 @@
 				1501C2111E588EE20013EA25 /* CoreDataStore.swift */,
 			);
 			path = "iOS-Viper-Architecture";
+			sourceTree = "<group>";
+		};
+		1501C2411E58A0FC0013EA25 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				1501C2421E58A0FC0013EA25 /* PersistenceError.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		1501C2431E58A0FC0013EA25 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				1501C2441E58A0FC0013EA25 /* Post.swift */,
+				1501C2571E58A26F0013EA25 /* PostModel.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		1501C2451E58A0FC0013EA25 /* PostDetail */ = {
+			isa = PBXGroup;
+			children = (
+				1501C2461E58A0FC0013EA25 /* DataManager */,
+				1501C2471E58A0FC0013EA25 /* Interactor */,
+				1501C2481E58A0FC0013EA25 /* Presenter */,
+				1501C2491E58A0FC0013EA25 /* Protocols */,
+				1501C24A1E58A0FC0013EA25 /* View */,
+				1501C24B1E58A0FC0013EA25 /* WireFrame */,
+			);
+			path = PostDetail;
+			sourceTree = "<group>";
+		};
+		1501C2461E58A0FC0013EA25 /* DataManager */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DataManager;
+			sourceTree = "<group>";
+		};
+		1501C2471E58A0FC0013EA25 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		1501C2481E58A0FC0013EA25 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		1501C2491E58A0FC0013EA25 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		1501C24A1E58A0FC0013EA25 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1501C24B1E58A0FC0013EA25 /* WireFrame */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = WireFrame;
+			sourceTree = "<group>";
+		};
+		1501C24C1E58A0FC0013EA25 /* PostList */ = {
+			isa = PBXGroup;
+			children = (
+				1501C24D1E58A0FC0013EA25 /* DataManager */,
+				1501C24E1E58A0FC0013EA25 /* Interactor */,
+				1501C24F1E58A0FC0013EA25 /* Presenter */,
+				1501C2501E58A0FC0013EA25 /* Protocols */,
+				1501C2521E58A0FC0013EA25 /* View */,
+				1501C2531E58A0FC0013EA25 /* WireFrame */,
+			);
+			path = PostList;
+			sourceTree = "<group>";
+		};
+		1501C24D1E58A0FC0013EA25 /* DataManager */ = {
+			isa = PBXGroup;
+			children = (
+				1501C2591E58A8CA0013EA25 /* Local */,
+				1501C25A1E58A8CA0013EA25 /* Remote */,
+			);
+			path = DataManager;
+			sourceTree = "<group>";
+		};
+		1501C24E1E58A0FC0013EA25 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				1501C25F1E58AA6D0013EA25 /* PostListInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		1501C24F1E58A0FC0013EA25 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				1501C2611E58ABBA0013EA25 /* PostListPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		1501C2501E58A0FC0013EA25 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				1501C2511E58A0FC0013EA25 /* PostListProtocols.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		1501C2521E58A0FC0013EA25 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1501C2651E58AF200013EA25 /* PostListView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1501C2531E58A0FC0013EA25 /* WireFrame */ = {
+			isa = PBXGroup;
+			children = (
+				1501C2631E58AE1B0013EA25 /* PostListWireFrame.swift */,
+			);
+			path = WireFrame;
+			sourceTree = "<group>";
+		};
+		1501C2591E58A8CA0013EA25 /* Local */ = {
+			isa = PBXGroup;
+			children = (
+				1501C25B1E58A8EB0013EA25 /* PostListLocalDataManager.swift */,
+			);
+			path = Local;
+			sourceTree = "<group>";
+		};
+		1501C25A1E58A8CA0013EA25 /* Remote */ = {
+			isa = PBXGroup;
+			children = (
+				1501C25D1E58A9090013EA25 /* PostListRemoteDataManager.swift */,
+			);
+			path = Remote;
 			sourceTree = "<group>";
 		};
 		AA967C08F14328672BD0EEA3 /* Frameworks */ = {
@@ -218,8 +392,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				1501C2051E588B550013EA25 /* iOS_Viper_Architecture.xcdatamodeld in Sources */,
+				1501C2581E58A26F0013EA25 /* PostModel.swift in Sources */,
 				1501C1FF1E588B550013EA25 /* ViewController.swift in Sources */,
 				1501C2121E588EE20013EA25 /* CoreDataStore.swift in Sources */,
+				1501C2561E58A0FC0013EA25 /* PostListProtocols.swift in Sources */,
+				1501C25E1E58A9090013EA25 /* PostListRemoteDataManager.swift in Sources */,
+				1501C2661E58AF200013EA25 /* PostListView.swift in Sources */,
+				1501C25C1E58A8EB0013EA25 /* PostListLocalDataManager.swift in Sources */,
+				1501C2551E58A0FC0013EA25 /* Post.swift in Sources */,
+				1501C2621E58ABBA0013EA25 /* PostListPresenter.swift in Sources */,
+				1501C2601E58AA6D0013EA25 /* PostListInteractor.swift in Sources */,
+				1501C2641E58AE1B0013EA25 /* PostListWireFrame.swift in Sources */,
+				1501C2541E58A0FC0013EA25 /* PersistenceError.swift in Sources */,
 				1501C1FD1E588B550013EA25 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -384,6 +568,7 @@
 				1501C2101E588B550013EA25 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
