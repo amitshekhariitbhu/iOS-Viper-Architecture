@@ -13,6 +13,7 @@
 		1501C2051E588B550013EA25 /* iOS_Viper_Architecture.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1501C2031E588B550013EA25 /* iOS_Viper_Architecture.xcdatamodeld */; };
 		1501C2071E588B550013EA25 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1501C2061E588B550013EA25 /* Assets.xcassets */; };
 		1501C20A1E588B550013EA25 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1501C2081E588B550013EA25 /* LaunchScreen.storyboard */; };
+		1501C2121E588EE20013EA25 /* CoreDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1501C2111E588EE20013EA25 /* CoreDataStore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		1501C2061E588B550013EA25 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1501C2091E588B550013EA25 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1501C20B1E588B550013EA25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1501C2111E588EE20013EA25 /* CoreDataStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				1501C2081E588B550013EA25 /* LaunchScreen.storyboard */,
 				1501C20B1E588B550013EA25 /* Info.plist */,
 				1501C2031E588B550013EA25 /* iOS_Viper_Architecture.xcdatamodeld */,
+				1501C2111E588EE20013EA25 /* CoreDataStore.swift */,
 			);
 			path = "iOS-Viper-Architecture";
 			sourceTree = "<group>";
@@ -141,6 +144,7 @@
 			files = (
 				1501C2051E588B550013EA25 /* iOS_Viper_Architecture.xcdatamodeld in Sources */,
 				1501C1FF1E588B550013EA25 /* ViewController.swift in Sources */,
+				1501C2121E588EE20013EA25 /* CoreDataStore.swift in Sources */,
 				1501C1FD1E588B550013EA25 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
