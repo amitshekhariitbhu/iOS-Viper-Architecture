@@ -25,6 +25,10 @@
 		1501C2621E58ABBA0013EA25 /* PostListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1501C2611E58ABBA0013EA25 /* PostListPresenter.swift */; };
 		1501C2641E58AE1B0013EA25 /* PostListWireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1501C2631E58AE1B0013EA25 /* PostListWireFrame.swift */; };
 		1501C2661E58AF200013EA25 /* PostListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1501C2651E58AF200013EA25 /* PostListView.swift */; };
+		1501C2681E58BCC50013EA25 /* PostDetailProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1501C2671E58BCC50013EA25 /* PostDetailProtocols.swift */; };
+		1501C26A1E58BEA40013EA25 /* PostDetailWireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1501C2691E58BEA40013EA25 /* PostDetailWireFrame.swift */; };
+		1501C26C1E58BF220013EA25 /* PostDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1501C26B1E58BF220013EA25 /* PostDetailPresenter.swift */; };
+		1501C26E1E58C1450013EA25 /* PostDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1501C26D1E58C1450013EA25 /* PostDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +52,10 @@
 		1501C2611E58ABBA0013EA25 /* PostListPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostListPresenter.swift; sourceTree = "<group>"; };
 		1501C2631E58AE1B0013EA25 /* PostListWireFrame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostListWireFrame.swift; sourceTree = "<group>"; };
 		1501C2651E58AF200013EA25 /* PostListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostListView.swift; sourceTree = "<group>"; };
+		1501C2671E58BCC50013EA25 /* PostDetailProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostDetailProtocols.swift; sourceTree = "<group>"; };
+		1501C2691E58BEA40013EA25 /* PostDetailWireFrame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostDetailWireFrame.swift; sourceTree = "<group>"; };
+		1501C26B1E58BF220013EA25 /* PostDetailPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostDetailPresenter.swift; sourceTree = "<group>"; };
+		1501C26D1E58C1450013EA25 /* PostDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostDetailView.swift; sourceTree = "<group>"; };
 		603469DB5210F5C501F8FDB5 /* Pods-iOS-Viper-Architecture.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS-Viper-Architecture.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOS-Viper-Architecture/Pods-iOS-Viper-Architecture.debug.xcconfig"; sourceTree = "<group>"; };
 		C0BC9D39498F514FA6DCC853 /* Pods-iOS-Viper-Architecture.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS-Viper-Architecture.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOS-Viper-Architecture/Pods-iOS-Viper-Architecture.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -121,8 +129,6 @@
 		1501C2451E58A0FC0013EA25 /* PostDetail */ = {
 			isa = PBXGroup;
 			children = (
-				1501C2461E58A0FC0013EA25 /* DataManager */,
-				1501C2471E58A0FC0013EA25 /* Interactor */,
 				1501C2481E58A0FC0013EA25 /* Presenter */,
 				1501C2491E58A0FC0013EA25 /* Protocols */,
 				1501C24A1E58A0FC0013EA25 /* View */,
@@ -131,23 +137,10 @@
 			path = PostDetail;
 			sourceTree = "<group>";
 		};
-		1501C2461E58A0FC0013EA25 /* DataManager */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = DataManager;
-			sourceTree = "<group>";
-		};
-		1501C2471E58A0FC0013EA25 /* Interactor */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Interactor;
-			sourceTree = "<group>";
-		};
 		1501C2481E58A0FC0013EA25 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
+				1501C26B1E58BF220013EA25 /* PostDetailPresenter.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -155,6 +148,7 @@
 		1501C2491E58A0FC0013EA25 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
+				1501C2671E58BCC50013EA25 /* PostDetailProtocols.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -162,6 +156,7 @@
 		1501C24A1E58A0FC0013EA25 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				1501C26D1E58C1450013EA25 /* PostDetailView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -169,6 +164,7 @@
 		1501C24B1E58A0FC0013EA25 /* WireFrame */ = {
 			isa = PBXGroup;
 			children = (
+				1501C2691E58BEA40013EA25 /* PostDetailWireFrame.swift */,
 			);
 			path = WireFrame;
 			sourceTree = "<group>";
@@ -393,11 +389,14 @@
 			files = (
 				1501C2051E588B550013EA25 /* iOS_Viper_Architecture.xcdatamodeld in Sources */,
 				1501C2581E58A26F0013EA25 /* PostModel.swift in Sources */,
+				1501C26C1E58BF220013EA25 /* PostDetailPresenter.swift in Sources */,
 				1501C1FF1E588B550013EA25 /* ViewController.swift in Sources */,
 				1501C2121E588EE20013EA25 /* CoreDataStore.swift in Sources */,
 				1501C2561E58A0FC0013EA25 /* PostListProtocols.swift in Sources */,
+				1501C2681E58BCC50013EA25 /* PostDetailProtocols.swift in Sources */,
 				1501C25E1E58A9090013EA25 /* PostListRemoteDataManager.swift in Sources */,
 				1501C2661E58AF200013EA25 /* PostListView.swift in Sources */,
+				1501C26E1E58C1450013EA25 /* PostDetailView.swift in Sources */,
 				1501C25C1E58A8EB0013EA25 /* PostListLocalDataManager.swift in Sources */,
 				1501C2551E58A0FC0013EA25 /* Post.swift in Sources */,
 				1501C2621E58ABBA0013EA25 /* PostListPresenter.swift in Sources */,
@@ -405,6 +404,7 @@
 				1501C2641E58AE1B0013EA25 /* PostListWireFrame.swift in Sources */,
 				1501C2541E58A0FC0013EA25 /* PersistenceError.swift in Sources */,
 				1501C1FD1E588B550013EA25 /* AppDelegate.swift in Sources */,
+				1501C26A1E58BEA40013EA25 /* PostDetailWireFrame.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

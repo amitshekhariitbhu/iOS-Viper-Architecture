@@ -20,10 +20,6 @@ class PostListView: UIViewController {
         tableView.tableFooterView = UIView()
     }
     
-    @IBAction func didClickOnAddButton(_ sender: UIBarButtonItem) {
-        presenter?.showPostDetail(from: self)
-    }
-    
 }
 
 extension PostListView: PostListViewProtocol {
@@ -47,6 +43,10 @@ extension PostListView: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return postList.count
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        presenter?.showPostDetail(forPost: postList[indexPath.section])
     }
     
 }

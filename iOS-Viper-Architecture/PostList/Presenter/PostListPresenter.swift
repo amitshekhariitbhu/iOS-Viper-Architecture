@@ -15,8 +15,8 @@ class PostListPresenter: PostListPresenterProtocol {
         interactor?.retrievePostList()
     }
     
-    func showPostDetail(from view: PostListViewProtocol) {
-        wireFrame?.presentPostDetailScreen(from: view)
+    func showPostDetail(forPost post: PostModel) {
+        wireFrame?.presentPostDetailScreen(from: view!, forPost: post)
     }
     
 }

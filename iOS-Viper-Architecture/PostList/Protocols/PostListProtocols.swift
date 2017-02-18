@@ -18,7 +18,7 @@ protocol PostListViewProtocol: class {
 protocol PostListWireFrameProtocol: class {
     static func createPostListModule() -> UIViewController
     // PRESENTER -> WIREFRAME
-    func presentPostDetailScreen(from view: PostListViewProtocol)
+    func presentPostDetailScreen(from view: PostListViewProtocol, forPost post: PostModel)
 }
 
 protocol PostListPresenterProtocol: class {
@@ -28,7 +28,7 @@ protocol PostListPresenterProtocol: class {
     
     // VIEW -> PRESENTER
     func viewDidLoad()
-    func showPostDetail(from view: PostListViewProtocol)
+    func showPostDetail(forPost post: PostModel)
 }
 
 protocol PostListInteractorOutputProtocol: class {

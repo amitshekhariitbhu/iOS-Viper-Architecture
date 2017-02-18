@@ -9,6 +9,25 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Post Detail View-->
+        <scene sceneID="xfU-dy-Rt5">
+            <objects>
+                <viewController id="5wH-fr-vNS" customClass="PostDetailView" customModule="iOS_Viper_Architecture" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="OFz-HC-hD2"/>
+                        <viewControllerLayoutGuide type="bottom" id="y6d-uU-Rzq"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="uAK-FY-fN1">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="qLQ-mJ-YQK"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1m9-Hs-IvH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="484" y="-663"/>
+        </scene>
         <!--Posts-->
         <scene sceneID="ixv-TJ-Tt9">
             <objects>
@@ -85,6 +104,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rgZ-PC-n1s" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-455.19999999999999" y="46.326836581709152"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="WYy-wX-Iw3">
+            <objects>
+                <navigationController storyboardIdentifier="PostDetailNavigationController" automaticallyAdjustsScrollViewInsets="NO" id="gwf-Ai-32R" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="5cC-PN-4ub">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="5wH-fr-vNS" kind="relationship" relationship="rootViewController" id="Qcd-4g-xbG"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rGs-y2-cfg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-455" y="-662"/>
         </scene>
     </scenes>
 </document>
