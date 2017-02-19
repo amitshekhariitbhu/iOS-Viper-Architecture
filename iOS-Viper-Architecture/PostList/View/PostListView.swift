@@ -31,7 +31,7 @@ extension PostListView: PostListViewProtocol {
     
 }
 
-extension PostListView: UITableViewDataSource {
+extension PostListView: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "PostCell") else {

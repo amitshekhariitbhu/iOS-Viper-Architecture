@@ -12,7 +12,7 @@
         <!--Post Detail View-->
         <scene sceneID="xfU-dy-Rt5">
             <objects>
-                <viewController id="5wH-fr-vNS" customClass="PostDetailView" customModule="iOS_Viper_Architecture" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PostDetailController" id="5wH-fr-vNS" customClass="PostDetailView" customModule="iOS_Viper_Architecture" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="OFz-HC-hD2"/>
                         <viewControllerLayoutGuide type="bottom" id="y6d-uU-Rzq"/>
@@ -56,11 +56,11 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="zFf-Fy-N9s" id="sUW-gq-fPg">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Mindorks" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="wBY-5v-mzj">
-                                                    <rect key="frame" x="15" y="0.0" width="345" height="43"/>
+                                                    <rect key="frame" x="15" y="0.0" width="345" height="43.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -104,24 +104,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rgZ-PC-n1s" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-455.19999999999999" y="46.326836581709152"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="WYy-wX-Iw3">
-            <objects>
-                <navigationController storyboardIdentifier="PostDetailNavigationController" automaticallyAdjustsScrollViewInsets="NO" id="gwf-Ai-32R" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="5cC-PN-4ub">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="5wH-fr-vNS" kind="relationship" relationship="rootViewController" id="Qcd-4g-xbG"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="rGs-y2-cfg" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-455" y="-662"/>
         </scene>
     </scenes>
 </document>

@@ -11,8 +11,8 @@ import UIKit
 class PostDetailWireFrame: PostDetailWireFrameProtocol {
     
     class func createPostDetailModule(forPost post: PostModel) -> UIViewController {
-        let navController = mainStoryboard.instantiateViewController(withIdentifier: "PostDetailNavigationController")
-        if let view = navController.childViewControllers.first as? PostDetailView {
+        let viewController = mainStoryboard.instantiateViewController(withIdentifier: "PostDetailController")
+        if let view = viewController as? PostDetailView {
             let presenter: PostDetailPresenterProtocol = PostDetailPresenter()
             let wireFrame: PostDetailWireFrameProtocol = PostDetailWireFrame()
             
@@ -21,7 +21,7 @@ class PostDetailWireFrame: PostDetailWireFrameProtocol {
             presenter.post = post
             presenter.wireFrame = wireFrame
             
-            return navController
+            return viewController
         }
         return UIViewController()
     }
