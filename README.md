@@ -11,7 +11,7 @@ This repository contains a detailed sample app that implements VIPER architectur
 <br>
 <br>
 
-# Architecture Blueprint
+# VIPER Architecture Blueprint
 ![Blueprint](https://raw.githubusercontent.com/MindorksOpenSource/iOS-Viper-Architecture/assets/viper.png)
 <br>
 
