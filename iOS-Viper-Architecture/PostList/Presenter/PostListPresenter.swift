@@ -27,6 +27,10 @@ extension PostListPresenter: PostListInteractorOutputProtocol {
         view?.showPosts(with: posts)
     }
     
+    func onError() {
+    
+    }
+    
 }
 
 

@@ -12,15 +12,19 @@ class PostListInteractor: PostListInteractorInputProtocol {
     var remoteDatamanager: PostListRemoteDataManagerInputProtocol?
     
     func retrievePostList() {
-        do {
-            if let contactList = try localDatamanager?.retrievePostList() {
-                presenter?.didRetrievePosts(contactList)
-            } else {
-                presenter?.didRetrievePosts([])
-            }
-        } catch {
-            presenter?.didRetrievePosts([])
-        }
+        remoteDatamanager?.retrievePostList()
+    }
+        
+}
+
+extension PostListInteractor: PostListRemoteDataManagerOutputProtocol {
+    
+    func onPostsRetrieved(_ posts: [PostModel]) {
+        presenter?.didRetrievePosts(posts)
+    }
+    
+    func onError() {
+        presenter?.onError()
     }
     
 }

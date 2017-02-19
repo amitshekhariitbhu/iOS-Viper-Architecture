@@ -34,6 +34,7 @@ protocol PostListPresenterProtocol: class {
 protocol PostListInteractorOutputProtocol: class {
     // INTERACTOR -> PRESENTER
     func didRetrievePosts(_ posts: [PostModel])
+    func onError()
 }
 
 protocol PostListInteractorInputProtocol: class {
@@ -50,8 +51,16 @@ protocol PostListDataManagerInputProtocol: class {
 }
 
 protocol PostListRemoteDataManagerInputProtocol: class {
+    var remoteRequestHandler: PostListRemoteDataManagerOutputProtocol? { get set }
+    
     // INTERACTOR -> REMOTEDATAMANAGER
-    func retrievePostList() throws -> [PostModel]
+    func retrievePostList()
+}
+
+protocol PostListRemoteDataManagerOutputProtocol: class {
+    // REMOTEDATAMANAGER -> INTERACTOR
+    func onPostsRetrieved(_ posts: [PostModel])
+    func onError()
 }
 
 protocol PostListLocalDataManagerInputProtocol: class {

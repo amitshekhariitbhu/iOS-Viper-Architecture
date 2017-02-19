@@ -7,17 +7,26 @@
 //
 
 import Foundation
+import Alamofire
+import AlamofireObjectMapper
 
 class PostListRemoteDataManager:PostListRemoteDataManagerInputProtocol {
     
-    func retrievePostList() throws -> [PostModel]  {
-        var posts = [PostModel]()
-        posts.append(PostModel())
-        posts.append(PostModel())
-        posts.append(PostModel())
-        posts.append(PostModel())
-        posts.append(PostModel())
-        return posts
+    var remoteRequestHandler: PostListRemoteDataManagerOutputProtocol?
+    
+    func retrievePostList() {
+        Alamofire
+            .request(Endpoints.Posts.fetch.url, method: .get)
+            .validate()
+            .responseArray(completionHandler: { (response: DataResponse<[PostModel]>) in
+                switch response.result {
+                case .success(let posts):
+                    self.remoteRequestHandler?.onPostsRetrieved(posts)
+            
+                case .failure( _):
+                    self.remoteRequestHandler?.onError()
+                }
+            })
     }
     
 }
