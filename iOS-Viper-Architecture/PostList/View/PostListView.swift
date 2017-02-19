@@ -47,10 +47,12 @@ extension PostListView: PostListViewProtocol {
 extension PostListView: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: "PostCell") else {
-            return UITableViewCell()
-        }
-    
+        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "PostCell", for: indexPath) as! PostTableViewCell
+        
+        let post = postList[indexPath.row]
+        cell.set(forPost: post)
+        
         return cell
     }
     
@@ -59,7 +61,7 @@ extension PostListView: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        presenter?.showPostDetail(forPost: postList[indexPath.section])
+        presenter?.showPostDetail(forPost: postList[indexPath.row])
     }
     
 }

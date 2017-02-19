@@ -1,5 +1,7 @@
 PODS:
   - Alamofire (4.2.0)
+  - AlamofireImage (3.2.0):
+    - Alamofire (~> 4.1)
   - AlamofireObjectMapper (4.0.1):
     - Alamofire (~> 4.1)
     - ObjectMapper (~> 2.0)
@@ -7,15 +9,18 @@ PODS:
   - PKHUD (4.1.0)
 
 DEPENDENCIES:
+  - Alamofire (~> 4.2.0)
+  - AlamofireImage (~> 3.1)
   - AlamofireObjectMapper (~> 4.0)
   - PKHUD (~> 4.0)
 
 SPEC CHECKSUMS:
   Alamofire: aa2e09d871c9160ac53c90e83c68064a94e3dfbe
+  AlamofireImage: 157ed682cc81d3b9db4fb90c1f12180ac552d93b
   AlamofireObjectMapper: 842d2eed43a4d0593ff0110d54ac86a170c4519c
   ObjectMapper: 9e385c2295bcc4e16eabbcfc85db801442bba545
   PKHUD: a0ecdee9f67d9b462c0c5e4ba38400292ea6ae6e
 
-PODFILE CHECKSUM: 76d6497e4699e30a7bbd7b48326586a13cbd8a40
+PODFILE CHECKSUM: 04b6c65e4c8cd898dd03946dec3740fce5cfa517
 
 COCOAPODS: 1.2.0

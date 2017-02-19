@@ -10,6 +10,11 @@ import UIKit
 
 class PostDetailView: UIViewController {
     
+    
+    @IBOutlet weak var postImageView: UIImageView!
+    
+    @IBOutlet weak var titleLabel: UILabel!
+    
     var presenter: PostDetailPresenterProtocol?
     
     override func viewDidLoad() {
@@ -21,8 +26,10 @@ class PostDetailView: UIViewController {
 
 extension PostDetailView: PostDetailViewProtocol {
     
-    func showPostDetail(forPost posts: PostModel) {
-        
+    func showPostDetail(forPost post: PostModel) {
+        titleLabel?.text = post.title
+        let url = URL(string: post.imageUrl)!
+        postImageView?.af_setImage(withURL: url)
     }
     
 }
