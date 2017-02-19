@@ -31,7 +31,7 @@ extension PostListView: PostListViewProtocol {
     }
     
     func showError() {
-        
+        HUD.flash(.label("Internet not connected"), delay: 2.0)
     }
     
     func showLoading() {

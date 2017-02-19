@@ -71,5 +71,6 @@ protocol PostListRemoteDataManagerOutputProtocol: class {
 
 protocol PostListLocalDataManagerInputProtocol: class {
      // INTERACTOR -> LOCALDATAMANAGER
-    func retrievePostList() throws -> [PostModel]
+    func retrievePostList() throws -> [Post]
+    func savePost(id: Int, title: String, imageUrl: String, thumbImageUrl: String) throws
 }

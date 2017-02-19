@@ -10,6 +10,6 @@ import Foundation
 
 enum PersistenceError: Error {
     case managedObjectContextNotFound
-    case couldNotCreateObject
+    case couldNotSaveObject
     case objectNotFound
 }
