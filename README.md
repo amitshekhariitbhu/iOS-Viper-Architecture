@@ -13,6 +13,13 @@ This repository contains a detailed sample app that implements VIPER architectur
 
 # Just fork, clone, build, run and learn VIPER architecture for IOS.
 
+```sh
+git clone https://github.com/MindorksOpenSource/iOS-Viper-Architecture.git
+cd iOS-Viper-Architecture
+pod install
+open iOS-Viper-Architecture.xcworkspace
+```
+
 ### License
 ```
    Copyright (C) 2017 MINDORKS NEXTGEN PRIVATE LIMITED
