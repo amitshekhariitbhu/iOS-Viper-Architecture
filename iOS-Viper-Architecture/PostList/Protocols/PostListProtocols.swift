@@ -13,6 +13,12 @@ protocol PostListViewProtocol: class {
     
     // PRESENTER -> VIEW
     func showPosts(with posts: [PostModel])
+    
+    func showError()
+    
+    func showLoading()
+    
+    func hideLoading()
 }
 
 protocol PostListWireFrameProtocol: class {

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import PKHUD
 
 class PostListView: UIViewController {
     
@@ -27,6 +28,18 @@ extension PostListView: PostListViewProtocol {
     func showPosts(with posts: [PostModel]) {
         postList = posts
         tableView.reloadData()
+    }
+    
+    func showError() {
+        
+    }
+    
+    func showLoading() {
+        HUD.show(.progress)
+    }
+    
+    func hideLoading() {
+        HUD.hide()
     }
     
 }
