@@ -29,7 +29,8 @@ extension PostDetailView: PostDetailViewProtocol {
     func showPostDetail(forPost post: PostModel) {
         titleLabel?.text = post.title
         let url = URL(string: post.imageUrl)!
-        postImageView?.af_setImage(withURL: url)
+        let placeholderImage = UIImage(named: "placeholder")!
+        postImageView?.af_setImage(withURL: url, placeholderImage: placeholderImage)
     }
     
 }
