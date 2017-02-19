@@ -1,14 +1,15 @@
 //
-//  Post.swift
-//  iOS-Viper-Architecture
+//  Post+CoreDataClass.swift
+//  
 //
-//  Created by Amit Shekhar on 18/02/17.
-//  Copyright © 2017 Mindorks NextGen Private Limited. All rights reserved.
+//  Created by Amit Shekhar on 19/02/17.
+//
 //
 
 import Foundation
+import CoreData
 
-public struct Post {
 
+public class Post: NSManagedObject {
+    
 }
-
