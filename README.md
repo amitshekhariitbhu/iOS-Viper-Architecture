@@ -19,7 +19,11 @@ This repository contains a detailed sample app that implements VIPER architectur
 ![Structure](https://raw.githubusercontent.com/MindorksOpenSource/iOS-Viper-Architecture/assets/project_structure.png)
 <br>
 
-# Just fork, clone, build, run and learn VIPER architecture for IOS.
+## Read the below listed article. It describe the VIPER concepts and the Project structure.
+[Building iOS App With VIPER Architecture](https://blog.mindorks.com/building-ios-app-with-viper-architecture-8109acc72227)
+
+
+## Just fork, clone, build, run and learn VIPER architecture for IOS.
 
 ```sh
 git clone https://github.com/MindorksOpenSource/iOS-Viper-Architecture.git
