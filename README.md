@@ -1,5 +1,6 @@
 # iOS Viper Architecture: Sample App
 [![Mindorks](https://img.shields.io/badge/mindorks-opensource-blue.svg)](https://mindorks.com/open-source-projects)
+[![Mindorks Community](https://img.shields.io/badge/join-community-blue.svg)](https://mindorks.com/join-community)
 
 This repository contains a detailed sample app that implements VIPER architecture using libraries and frameworks like Alamofire, AlamofireImage, PKHUD, CoreData etc.
 
