@@ -6,9 +6,9 @@ target 'iOS-Viper-Architecture' do
   use_frameworks!
 
   # Pods for iOS-Viper-Architecture
-  pod 'Alamofire', '~> 4.2.0'
-  pod 'AlamofireObjectMapper', '~> 4.0'
-  pod 'AlamofireImage', '~> 3.1'
-  pod 'PKHUD', '~> 4.0'
+  pod 'Alamofire', '~> 4.5.0'
+  pod 'AlamofireObjectMapper', '~> 5.0'
+  pod 'AlamofireImage', '~> 3.3'
+  pod 'PKHUD', '~> 5.0'
 
 end
