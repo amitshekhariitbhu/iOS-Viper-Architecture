@@ -8,7 +8,9 @@ This repository contains a detailed sample app that implements VIPER architectur
   <img src="https://raw.githubusercontent.com/amitshekhariitbhu/iOS-Viper-Architecture/assets/screenshot3.png" width="250">
 </p>
 <br>
-<br>
+<be>
+
+# Blog: [Building iOS App With VIPER Architecture](https://outcomeschool.com/blog/ios-app-with-viper-architecture)
 
 # VIPER Architecture Blueprint
 ![Blueprint](https://raw.githubusercontent.com/amitshekhariitbhu/iOS-Viper-Architecture/assets/viper.png)
